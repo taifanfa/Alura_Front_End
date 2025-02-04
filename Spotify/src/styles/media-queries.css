@@ -1,0 +1,30 @@
+/* Exemplo de media query para telas pequenas */
+@media (max-width: 768px) {
+    .main-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header-navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .offer_scroll-container {
+        max-height: 50vh;
+    }
+
+    /* Ajuste de grid para telas menores */
+    .offer_list-item {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas pequenas */
+    }
+
+    .artist-card {
+        width: 100%; /* Faz os cards ocuparem toda a largura disponível */
+    }
+}
